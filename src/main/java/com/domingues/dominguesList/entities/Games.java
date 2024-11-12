@@ -14,10 +14,14 @@ public class Games {
     @Column(name = "game_year")
     private Integer year;
     private String genre;
-    private String plataforms;
-    private Double scrore;
+    private String platforms;
+    private Double score;
     private String imgUrl;
-    private String shorDescription;
+
+    @Column(columnDefinition = "TEXT")
+    private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Games(){}
@@ -28,10 +32,10 @@ public class Games {
         this.title = title;
         this.year = year;
         this.genre = genre;
-        this.plataforms = plataforms;
-        this.scrore = scrore;
+        this.platforms = plataforms;
+        this.score = scrore;
         this.imgUrl = imgUrl;
-        this.shorDescription = shorDescription;
+        this.shortDescription = shorDescription;
         this.longDescription = longDescription;
     }
 
@@ -67,20 +71,20 @@ public class Games {
         this.genre = genre;
     }
 
-    public String getPlataforms() {
-        return plataforms;
+    public String getPlatforms() {
+        return platforms;
     }
 
-    public void setPlataforms(String plataforms) {
-        this.plataforms = plataforms;
+    public void setPlatforms(String platforms) {
+        this.platforms = platforms;
     }
 
-    public Double getScrore() {
-        return scrore;
+    public Double getScore() {
+        return score;
     }
 
-    public void setScrore(Double scrore) {
-        this.scrore = scrore;
+    public void setScore(Double score) {
+        this.score = score;
     }
 
     public String getImgUrl() {
@@ -91,12 +95,12 @@ public class Games {
         this.imgUrl = imgUrl;
     }
 
-    public String getShorDescription() {
-        return shorDescription;
+    public String getShortDescription() {
+        return shortDescription;
     }
 
-    public void setShorDescription(String shorDescription) {
-        this.shorDescription = shorDescription;
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
     }
 
     public String getLongDescription() {
