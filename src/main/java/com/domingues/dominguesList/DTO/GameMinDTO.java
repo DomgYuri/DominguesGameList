@@ -1,6 +1,7 @@
 package com.domingues.dominguesList.DTO;
 
 import com.domingues.dominguesList.entities.Game;
+import com.domingues.dominguesList.projections.GameMinProjection;
 
 public class GameMinDTO {
 
@@ -19,6 +20,14 @@ public class GameMinDTO {
         year = entity.getYear();
         imgUrl = entity.getImgUrl();
         longDescription = entity.getShortDescription();
+    }
+
+   public GameMinDTO(GameMinProjection projection){
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        longDescription = projection.getShortDescription();
     }
 
     public Long getId() {
