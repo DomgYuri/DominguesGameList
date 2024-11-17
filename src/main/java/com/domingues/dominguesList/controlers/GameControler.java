@@ -1,4 +1,4 @@
-package com.domingues.dominguesList.restControlers;
+package com.domingues.dominguesList.controlers;
 
 import com.domingues.dominguesList.DTO.GameDTO;
 import com.domingues.dominguesList.DTO.GameMinDTO;
